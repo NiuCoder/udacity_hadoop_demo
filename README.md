@@ -17,7 +17,7 @@
 - 统计来自每个ip地址的请求，输出格式为<ip,request_times>，代码见：[mapper2.py](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/web_logs/mapper2.py)以及[reducer2.py](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/web_logs/reducer2.py)，结果见[hits_ip_result.txt](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/web_logs/hits_ip_result.txt)
 - 统计被访问最多的文件及对应的访问次数，输出格式为<path,max_request_times>，代码见：[mapper3.py](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/web_logs/mapper3.py)以及[reducer3.py](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/web_logs/reducer3.py)，结果见[hits_max_path_result.txt](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/web_logs/hits_max_path_result.txt)
 
-#[forums](https://github.com/NiuCoder/udacity_hadoop_demo/tree/master/forms)
+# [forums](https://github.com/NiuCoder/udacity_hadoop_demo/tree/master/forms)
 数据集见[forum_node_sample.tsv](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/forms/forum_node_sample.tsv)。数据结构为：ip|title|tagnames|author_id|body|node_type|parent_id|abs_parent_id|added_at|score|state_string|last_edited_id|last_activity_by_id|last_activity_at|active_revision_id|extra|extra_ref_id|extra_count|marked，这是表头，后边数据按照这个表头排列。需要注意的是body字段存储了很多一些html标签，所以在处理的时候如果需要将这些标签替换为转义字符，这样能够保证一条数据在一行。本例不包含处理代码。<br>
 本例的目标只有一个：<br>
 - 统计每个author_id在发帖最多的时间段，输出格式为：<author_id,hour>，代码见：[mapper.py](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/forms/mapper.py)以及[reducer.py](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/forms/reducer.py)，[student_test_posts.csv](https://github.com/NiuCoder/udacity_hadoop_demo/blob/master/forms/student_test_posts.csv)包含较少的数据用于测试代码。
