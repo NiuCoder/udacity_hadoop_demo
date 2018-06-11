@@ -1,5 +1,5 @@
 # udacity_hadoop_demo
-本项目源自Udacity的免费课程**Intro to Hadoop and MapReduce**，其中数据集均是课程提供的，由于github有文件大小限制，因此只上传了这些数据集中的一部分。通过该项目可以对Hadoop下的map&reduce编码有较为深入的理解。**项目中代码的实现均由本人完成**<br>
+本项目源自Udacity的免费课程**Intro to Hadoop and MapReduce**，其中数据集均是课程提供的，由于github有文件大小限制，因此只上传了这些数据集中的一部分。通过该项目可以对Hadoop下的map&reduce编码有较为深入的理解。**项目中代码的实现均由本人设计实现。**<br>
 项目运行环境是windows10下，基于[Udacity](https://classroom.udacity.com/courses/ud617)提供的Cloudera CDH集成开发环境，需要首先下载[虚拟机镜像](http://content.udacity-data.com/courses/ud617/Cloudera-Udacity-Training-VM-4.1.1.c.zip)。然后需要下载[VirtualBox](https://download.virtualbox.org/virtualbox/5.2.12/VirtualBox-5.2.12-12-122591.-Win.exe)。建议选择Linux64+Ubuntu作为运行系统，其他安装配置略。<br>
 三个demo对应的数据集分别是销售数据、网站请求日志以及论坛帖子数据库。下面分别就每个项目进行说明：<br>
 # [sales](https://github.com/NiuCoder/udacity_hadoop_demo/tree/master/sales)
